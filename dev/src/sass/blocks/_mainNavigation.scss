@@ -1,0 +1,49 @@
+.l-mainNavigation {
+  padding: 0;
+  margin: 0;
+}
+.b-mainNavigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 30px;
+
+  &__item {
+    font-weight: 400;
+    &.-state_active {
+      font-weight: 700;
+      pointer-events: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: block;
+    color: $font;
+    font-weight: inherit;
+    font-size: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: $font;
+      padding: 0;
+      margin: 0;
+      transition: .3s;
+    }
+
+    &:hover::before {
+      left: 0;
+      width: 100%;
+      transition: .3s;
+    }
+  }
+}

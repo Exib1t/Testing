@@ -1,0 +1,39 @@
+.l-hamburgers {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.b-hamburgers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  box-sizing: border-box;
+  padding: 70px 20px;
+  margin: 0 auto;
+
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px 10px 10px;
+    margin: 0;
+    border: 1px solid $slideBg;
+    border-radius: 5px;
+
+    &Title {
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $font;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

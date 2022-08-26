@@ -1,0 +1,25 @@
+.b-cursor {
+  display: block;
+  position: absolute;
+  left: unset;
+  top: unset;
+  background: #ffffff;
+  //width: 30px;
+  //height: 3px;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%);
+  box-shadow: #7600ff 0 0 35px 25px;
+  z-index: -1;
+
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  left: 50%;
+  //  top: 50%;
+  //  background: #e6e6e6;
+  //  width: 3px;
+  //  height: 30px;
+  //  transform: translate(-50%, -50%);
+  //}
+}

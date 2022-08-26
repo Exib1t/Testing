@@ -1,0 +1,102 @@
+.l-firstScreen {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.b-firstScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  box-sizing: border-box;
+  padding: 75px 20px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 62px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    color: $font;
+    padding: 0;
+    margin: 0 0 40px;
+
+    span.-outlineText {
+      text-transform: uppercase;
+      color: transparent;
+      -webkit-text-stroke: 1px $font;
+    }
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    p {
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: $font;
+
+      span {
+        background: linear-gradient(#e6e6e6 0%, rgb(118, 0, 255) 100%);
+        background-clip: text;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: transparent;
+      }
+    }
+  }
+
+  &__arrow {
+    display: block;
+    background: $font;
+    width: 3px;
+    height: 100px;
+    opacity: 0.3;
+    padding: 0;
+    margin: 40px 0 0 0;
+    position: relative;
+    animation: arrowAnim 1s ease-in-out infinite;
+
+    &::before {
+      content: "";
+      background: $font;
+      position: absolute;
+      bottom: 14px;
+      left: -4px;
+      width: 40px;
+      height: 3px;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      background: $font;
+      position: absolute;
+      bottom: 14px;
+      right: -4px;
+      width: 40px;
+      height: 3px;
+      transform: rotate(45deg);
+    }
+
+    @keyframes arrowAnim {
+      0% {
+        top: 0;
+      }
+
+      50% {
+        top: 50px;
+      }
+
+      100% {
+        top: 0;
+      }
+    }
+  }
+}

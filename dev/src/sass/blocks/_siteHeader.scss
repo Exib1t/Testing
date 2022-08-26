@@ -1,0 +1,16 @@
+.l-siteHeader {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.b-siteHeader {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}

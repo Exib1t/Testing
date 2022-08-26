@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import 'other/normalize';
+@import 'other/h5b';
+
+@import 'mixins';
+
+/**
+ * Settings
+ */
+@import 'fonts';
+@import 'settings';
+@import 'colors';
+
+/**
+ * Generated
+ */
+@import 'sprites';
+
+/**
+ * Plugins
+ */
+@import "plugins/swiper-bundle";
+@import "plugins/hamburgers/hamburgers";
+
+/* ==|== primary styles =====================================================
+   Authors: %Author Name%
+   ========================================================================== */
+
+/**
+ * Framework Common Libraries
+ */
+@import "other/g-blocks";
+
+/**
+ * Project only code
+ */
+@import "other/common";
+@import "blocks/text";
+
+/**
+ * Blocks
+ */
+@import 'blocks/bottomNavigation';
+@import 'blocks/developerCopyright';
+@import 'blocks/mainNavigation';
+@import 'blocks/siteCopyright';
+@import 'blocks/siteFooter';
+@import 'blocks/siteHeader';
+@import 'blocks/siteLogo';
+@import 'blocks/siteSearch';
+@import 'blocks/firstScreen';
+@import 'blocks/cursor';
+@import 'blocks/slider';
+@import 'blocks/hamburgers';
+
+/**
+ * Print styles
+ */
+@import "other/print";
