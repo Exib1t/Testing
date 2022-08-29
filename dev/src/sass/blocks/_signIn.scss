@@ -1,0 +1,141 @@
+.l-signIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  opacity: 0;
+  transition: opacity .3s;
+
+  &.-opened {
+    z-index: 1;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+}
+
+.b-signIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  margin: 0;
+  background: $bg;
+  border-radius: 10px;
+  position: relative;
+
+  &__close {
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -100%) rotate(-45deg);
+      width: 25px;
+      height: 1px;
+      background: $font;
+      padding: 0;
+      margin: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -100%) rotate(45deg);
+      width: 25px;
+      height: 1px;
+      background: $font;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__inputName {
+    font-size: 16px;
+    font-weight: 500;
+    color: $font;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__input {
+    background: rgba(118, 0, 255, 0.18);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #7600ff;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: $font;
+  }
+
+  &__button {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: $font;
+    background: rgba(118, 0, 255, 0.18);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #7600ff;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background: rgba(118, 0, 255, 0.32);
+    }
+  }
+}

@@ -16,6 +16,7 @@ require( 'inc/header.php' );
       <span class="b-firstScreen__arrow"></span>
     </div>
   </section>
+
 </main>
 
 <?php require( 'inc/footer.php' ); ?>

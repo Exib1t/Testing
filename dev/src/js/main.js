@@ -4,6 +4,8 @@ $(function() {
   // cursorAnimInit();
   sliderInit();
   hamburgersInit();
+  signUpToggle();
+  signInToggle();
 });
 
 $(window).on('resize', function() {
@@ -41,5 +43,37 @@ function hamburgersInit() {
     hamburger.addEventListener('click', ()=> {
       hamburger.classList.toggle('is-active');
     });
+  });
+}
+
+function signUpToggle() {
+  $('.js-signUpBtn').on('click', ()=> {
+    $('.js-signUp').addClass('-opened');
+  });
+
+  $('.js-signUpClose').on('click', ()=> {
+    $('.js-signUp').removeClass('-opened');
+  });
+
+  document.addEventListener('click', (e)=> {
+    if (e.target === document.querySelector('.l-signUp')) {
+      document.querySelector('.l-signUp').classList.remove('-opened');
+    }
+  });
+}
+
+function signInToggle() {
+  $('.js-signInBtn').on('click', ()=> {
+    $('.js-signIn').addClass('-opened');
+  });
+
+  $('.js-signInClose').on('click', ()=> {
+    $('.js-signIn').removeClass('-opened');
+  });
+
+  document.addEventListener('click', (e)=> {
+    if (e.target === document.querySelector('.l-signIn')) {
+      document.querySelector('.l-signIn').classList.remove('-opened');
+    }
   });
 }
